@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Contact Us</title>
+    <title>Cart</title>
 
     <link href="../css/main.css" rel="stylesheet" />
   </head>
@@ -11,7 +11,7 @@
     <header>
       <nav class="main-nav">
         <div class="nav-left">
-          <a class="nav-image-link" href="../html/home.html">
+          <a class="nav-image-link" href="../html/index.html">
             <img
               class="nav-logo nav-image-default"
               src="../image/qqtea-icon.svg"
@@ -45,37 +45,92 @@
       </nav>
     </header>
 
-    <main class="contact-section">
-      <h2>GET IN TOUCH</h2>
-      <p>
-        Questions, feedback or ideas - write to us and we will reply by email.
-      </p>
+    <main class="checkout-layout">
+      <div class="cart">
+        <h1>CART DETAILS</h1>
+        <h4>Order Summary</h4>
 
-      <form class="contact-form">
-        <div class="form-content">
-          <div>
-            <label for="contact-name">Name</label>
-            <input type="text" id="contact-name" required />
-          </div>
+        <div class="cart-item">
+          <a href="../html/brown-sugar.html">
+            <img
+              src="../image/brown-sugar-milk-tea-icon.png"
+              alt="Brown sugar pearl milk tea"
+              class="image-icon"
+            />
+          </a>
 
-          <div>
-            <label for="contact-email">Email</label>
-            <input type="email" id="contact-email" required />
+          <div class="cart-item-info">
+            <div class="cart-title-price">
+              <h3>Brown Sugar QQTea</h3>
+              <h4>$5.60</h4>
+            </div>
+
+            <p>No Ice</p>
+            <p>100% Sugar</p>
+
+            <div class="cart-edit">
+              <div class="quantity-control">
+                <button type="button">-</button>
+                <input
+                  type="number"
+                  id="quantity-brown-sugar"
+                  value="1"
+                  min="1"
+                />
+                <button type="button">+</button>
+              </div>
+
+              <div class="cart-action">
+                <button class="edit-btn">Edit</button>
+                <button class="remove-btn">Remove</button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div>
-          <label for="contact-message">Message</label>
-          <textarea id="contact-message" required></textarea>
-          <button type="submit">Send</button>
+        <div class="cart-item">
+          <img
+            src="../image/osmanthus-lychee-lemonade-icon.png"
+            alt="Osmanthus Lychee Lemonade"
+            class="image-icon"
+          />
+
+          <div class="cart-item-info">
+            <div class="cart-title-price">
+              <h3>Osmanthus Lychee Lemonade</h3>
+              <h4>$5.80</h4>
+            </div>
+
+            <p>Less Ice</p>
+            <p>50% Sugar</p>
+
+            <div class="cart-edit">
+              <div class="quantity-control">
+                <button type="button">-</button>
+                <input type="number" id="quantity-lychee" value="1" min="1" />
+                <button type="button">+</button>
+              </div>
+
+              <div class="cart-action">
+                <button class="edit-btn">Edit</button>
+                <button class="remove-btn">Remove</button>
+              </div>
+            </div>
+          </div>
         </div>
-      </form>
+
+        <div class="cart-total">
+          <h4>Total</h4>
+          <h4>$11.40</h4>
+        </div>
+        <a class="primary-button" href="checkout.html"> Proceed to Checkout </a>
+      </div>
     </main>
 
     <footer class="site-footer">
       <div class="footer-content">
         <div>
-          <a class="nav-image-link" href="../html/home.html">
+          <a class="nav-image-link" href="../html/index.html">
             <img
               class="footer-logo"
               src="../image/qqtea-icon-footer.svg"
@@ -86,7 +141,7 @@
 
         <div class="footer-link">
           <p class="footer-heading">ABOUT</p>
-          <a href="../html/index.html">Style Guide</a>
+          <a href="../html/styleguide.html">Style Guide</a>
           <a href="https://github.com/qiaolexii7/IAT339_P01">Github</a>
           <a href="#">FAQs</a>
         </div>

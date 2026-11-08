@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>About</title>
+    <title>Contact Us</title>
 
     <link href="../css/main.css" rel="stylesheet" />
   </head>
@@ -11,7 +11,7 @@
     <header>
       <nav class="main-nav">
         <div class="nav-left">
-          <a class="nav-image-link" href="../html/home.html">
+          <a class="nav-image-link" href="../html/index.html">
             <img
               class="nav-logo nav-image-default"
               src="../image/qqtea-icon.svg"
@@ -45,39 +45,37 @@
       </nav>
     </header>
 
-    <main class="about-page">
-      <section class="about-header">
-        <h1>ABOUT QQTea</h1>
+    <main class="contact-section">
+      <h2>GET IN TOUCH</h2>
+      <p>
+        Questions, feedback or ideas - write to us and we will reply by email.
+      </p>
 
-        <p>
-          QQ Tea is a friendly fictional tea shop focused on fun affordable
-          drinks and a convenient ordering experience.
-        </p>
-      </section>
+      <form class="contact-form">
+        <div class="form-content">
+          <div>
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" required />
+          </div>
 
-      <section class="about-section">
-        <h2>Our Story</h2>
+          <div>
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" required />
+          </div>
+        </div>
 
-        <p>[content to be added]</p>
-      </section>
-
-      <section class="about-section">
-        <h2>What We Make</h2>
-
-        <p>[content to be added]</p>
-      </section>
-
-      <section class="about-section">
-        <h2>Our Approach</h2>
-
-        <p>[content to be added]</p>
-      </section>
+        <div>
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" required></textarea>
+          <button type="submit">Send</button>
+        </div>
+      </form>
     </main>
 
     <footer class="site-footer">
       <div class="footer-content">
         <div>
-          <a class="nav-image-link" href="../html/home.html">
+          <a class="nav-image-link" href="../html/index.html">
             <img
               class="footer-logo"
               src="../image/qqtea-icon-footer.svg"
@@ -88,7 +86,7 @@
 
         <div class="footer-link">
           <p class="footer-heading">ABOUT</p>
-          <a href="../html/index.html">Style Guide</a>
+          <a href="../html/styleguide.html">Style Guide</a>
           <a href="https://github.com/qiaolexii7/IAT339_P01">Github</a>
           <a href="#">FAQs</a>
         </div>
