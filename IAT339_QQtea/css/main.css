@@ -444,9 +444,10 @@ code {
   I tried applying the primary-button style but it wasn't flexble,
   the way it spans was... interesting.
 */
-.price-cart button {
+.product-listing-button {
   font-family: "LINE Seed JP", sans-serif;
   font-weight: bold;
+  text-decoration: none;
 
   padding: 0.5rem 1rem;
 
@@ -459,8 +460,8 @@ code {
   transition-property: background-color;
   transition-duration: 0.25s;
 }
-.price-cart button:hover,
-.price-cart button:focus {
+.product-listing-button:hover,
+.product-listing-button:focus {
   background-color: #2d2926;
 }
 
@@ -1070,11 +1071,12 @@ pre {
 
 .product-detail-button {
   font-family: "LINE Seed JP", sans-serif;
-  font-size: 1rem;
   font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
 
   min-width: 13rem;
-  padding: 0.65rem 1.5rem;
+  padding: 0.65rem 0.25rem;
 
   color: white;
   background-color: #83b6f1;
@@ -1091,6 +1093,36 @@ pre {
 .product-detail-button:hover,
 .product-detail-button:focus {
   background-color: #2d2926;
+}
+
+/* ICE AND SUGAR LEVEL STYLING */
+.customization-form {
+  font-family: "LINE Seed JP", sans-serif;
+
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.customization-form p {
+  font-weight: bold;
+  font-size: 1rem;
+
+  margin: 1.5rem;
+}
+
+.customization-section {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 42rem) {
+  .customization-section {
+    flex-direction: column;
+  }
 }
 
 /* 
