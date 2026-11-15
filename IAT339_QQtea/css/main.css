@@ -273,20 +273,46 @@ code {
   color: #2d2926;
 }
 
-.submit-reset-button button {
+/* 
+  SHARED PRIMARY BUTTON STYLING
+*/
+.submit-reset-button button,
+.primary-button,
+.product-listing-button,
+.product-detail-button,
+.contact-form button,
+.about-menu-button {
   font-family: "LINE Seed JP", sans-serif;
   font-weight: bold;
 
-  padding: 0.5rem 1rem;
-
   color: white;
   background-color: #83b6f1;
+
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
 
   transition-property: background-color;
   transition-duration: 0.25s;
+}
+
+.submit-reset-button button:hover,
+.submit-reset-button button:focus,
+.primary-button:hover,
+.primary-button:focus,
+.product-listing-button:hover,
+.product-listing-button:focus,
+.product-detail-button:hover,
+.product-detail-button:focus,
+.contact-form button:hover,
+.contact-form button:focus,
+.about-menu-button:hover,
+.about-menu-button:focus {
+  background-color: #2d2926;
+}
+
+.submit-reset-button button {
+  padding: 0.5rem 1rem;
 }
 .submit-reset-button button:hover,
 .submit-reset-button button:focus {
@@ -304,17 +330,8 @@ code {
 
 /* Primary action button */
 .primary-button {
-  font-family: "LINE Seed JP", sans-serif;
   font-size: 1rem;
-  font-weight: bold;
   padding: 0.65rem 4.25rem;
-  color: white;
-  background-color: #83b6f1;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 0.25s;
   margin-top: 1.5rem;
   width: 100%;
 }
@@ -393,10 +410,6 @@ code {
 }
 
 /* 
-  COMBINED ELEMENTS -------------------
-*/
-
-/* 
   PRODUCT LISTING SECTION -------------------
 */
 .product-listing {
@@ -446,20 +459,8 @@ code {
   the way it spans was... interesting.
 */
 .product-listing-button {
-  font-family: "LINE Seed JP", sans-serif;
-  font-weight: bold;
   text-decoration: none;
-
   padding: 0.5rem 1rem;
-
-  color: white;
-  background-color: #83b6f1;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-
-  transition-property: background-color;
-  transition-duration: 0.25s;
 }
 .product-listing-button:hover,
 .product-listing-button:focus {
@@ -472,10 +473,11 @@ code {
   border-radius: 0.5rem;
 }
 
-/* 
-  PAYMENT FORM SECTION -------------------
+/*
+  CART & CHECKOUT
 */
-.checkout-form {
+.checkout-form,
+.cart {
   max-width: 37rem;
   margin: 0;
   padding: 1.5rem;
@@ -485,15 +487,26 @@ code {
   border-radius: 1.25rem;
 }
 
-/* Styling text for the Payment section */
-.checkout-form h1 {
+.checkout-form h1,
+.cart h1 {
   font-size: 3rem;
   margin: 0;
 }
-.checkout-form h4 {
+
+/* 
+  PAYMENT FORM SECTION -------------------
+*/
+/* Styling text for the Payment section */
+
+.checkout-form h2,
+.checkout-form h3 {
   font-family: "LINE Seed JP", sans-serif;
+  font-size: 0.9rem;
   font-weight: bold;
+  margin-top: 1.33em;
   margin-bottom: 0.5rem;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 .schedule-pickup-section {
@@ -536,6 +549,7 @@ code {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
+  margin-bottom: 1.75rem;
 }
 .payment-info-section h4 {
   grid-column: 1 / -1;
@@ -564,23 +578,13 @@ code {
 /*
   CHECKOUT CART SECTION -------------------
 */
-.cart {
-  max-width: 37rem;
-  margin: 0;
-  padding: 1.5rem;
-
-  background-color: white;
-  border: 0.1rem solid #d9d5d2;
-  border-radius: 1.25rem;
-}
-
-.cart h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-.cart h4 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+.cart h2 {
+  font-family: "LINE Seed JP", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  border-bottom: none;
 }
 
 .cart-item {
@@ -745,6 +749,7 @@ This hides the deafult styling html have for input type="number" or else it has 
   width: 10rem;
   min-height: 8rem;
   padding: 1rem;
+  flex: 0 0 10rem;
   border: 0.1rem solid #d9d5d2;
 }
 
@@ -754,10 +759,6 @@ This hides the deafult styling html have for input type="number" or else it has 
   gap: 2rem;
   flex: 1 1 45%;
   min-width: 30rem;
-}
-
-.colour-swatch {
-  flex: 0 0 10rem;
 }
 
 .colour-usage {
@@ -887,10 +888,6 @@ This hides the deafult styling html have for input type="number" or else it has 
   width: 5rem;
 }
 
-.product-image {
-  width: 50rem;
-}
-
 /*
   DISPLAY
 */
@@ -917,9 +914,24 @@ This hides the deafult styling html have for input type="number" or else it has 
   gap: 1rem;
 }
 
+.style-guide-nav-heading {
+  font-family: "LINE Seed JP", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
 .style-guide-main {
   flex: 1;
   min-width: 0;
+}
+
+.heading-one-example {
+  font-family: "Ligema", sans-serif;
+  font-size: 5.3rem;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
 pre {
@@ -954,7 +966,7 @@ pre {
     gap: 0.75rem 1.5rem;
   }
 
-  .style-guide-nav h4 {
+  .style-guide-nav-heading {
     width: 100%;
     margin-bottom: 0;
   }
@@ -974,12 +986,16 @@ pre {
   margin-top: 6rem;
   margin-bottom: 4rem;
 }
-.seasonal-offer-section h2 {
+
+.seasonal-offer-section h1 {
+  font-family: "Nanum Pen", cursive;
   font-size: 3.5rem;
+  font-weight: 500;
   margin-bottom: 1rem;
   margin-top: 0;
-  border-bottom: none;
+  padding-bottom: 0.5rem;
 }
+
 .seasonal-offer-section p {
   max-width: 33rem;
   font-size: 1rem;
@@ -996,6 +1012,14 @@ pre {
 /* 
   PRODUCT LISTING WEBPAGE STYLING
 */
+.page-title-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
 .product-category h2 {
   text-align: center;
   font-size: 3.5rem;
@@ -1066,24 +1090,12 @@ pre {
 }
 
 .product-detail-button {
-  font-family: "LINE Seed JP", sans-serif;
-  font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
 
   min-width: 13rem;
   padding: 0.65rem 0.25rem;
-
-  color: white;
-  background-color: #83b6f1;
-
-  border: none;
   border-radius: 0.6rem;
-
-  cursor: pointer;
-
-  transition-property: background-color;
-  transition-duration: 0.25s;
 }
 
 .product-detail-button:hover,
@@ -1124,11 +1136,26 @@ pre {
 /* 
   CART WEBPAGE STYLING
 */
+.cart-demo-title {
+  font-family: "Ligema", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cart-demo-heading {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 .checkout-layout .cart,
 .checkout-layout .checkout-form {
   margin: 0 auto;
 }
-.checkout-layout .primary-button {
+/* Shared primary button styling: checkout and contact form */
+.checkout-layout .primary-button,
+.contact-form .primary-button {
   display: block;
   box-sizing: border-box;
   text-align: center;
@@ -1138,8 +1165,18 @@ pre {
 /* 
   CHECKOUT WEBPAGE STYLING
 */
-.payment-info-section {
-  margin-bottom: 1.75rem;
+.checkout-demo-title {
+  font-family: "Ligema", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.checkout-demo-heading {
+  font-family: "LINE Seed JP", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .order-item {
@@ -1163,11 +1200,12 @@ pre {
 /*
   CONTACT WEBPAGE STYLING
 */
-.contact-section h2 {
+.contact-section h1 {
   text-align: center;
+  font-family: "Nanum Pen", cursive;
   font-size: 3.5rem;
+  font-weight: 500;
   margin-top: 6rem;
-  border-bottom: none;
 }
 .contact-section p {
   text-align: center;
@@ -1210,19 +1248,6 @@ pre {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-.contact-form button {
-  font-family: "LINE Seed JP", sans-serif;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  color: white;
-  background-color: #83b6f1;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-
-  transition-property: background-color;
-  transition-duration: 0.25s;
-}
 .contact-form button:hover,
 .contact-form button:focus {
   background-color: #2d2926;
@@ -1240,9 +1265,11 @@ pre {
   padding: 0 1rem;
 }
 
-.about-intro h2 {
+.about-intro h1 {
   text-align: center;
+  font-family: "Nanum Pen", cursive;
   font-size: 3.5rem;
+  font-weight: 500;
   margin-top: 6rem;
   border-bottom: none;
 }
@@ -1299,22 +1326,10 @@ pre {
 
 .about-menu-button {
   display: inline-block;
-
   margin-top: 1.5rem;
   padding: 0.65rem 2rem;
-
-  font-family: "LINE Seed JP", sans-serif;
   font-size: 1rem;
-  font-weight: bold;
-
-  color: white;
-  background-color: #83b6f1;
-
-  border-radius: 0.5rem;
   text-decoration: none;
-
-  transition-property: background-color;
-  transition-duration: 0.25s;
 }
 
 .about-menu-button:hover,
