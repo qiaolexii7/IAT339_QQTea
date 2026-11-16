@@ -464,7 +464,8 @@ code {
   background-color: #2d2926;
 }
 
-.price-cart h4 {
+.product-listing-price {
+  font-weight: bold;
   padding: 0.5rem 1rem;
   background-color: #ffd683;
   border-radius: 0.5rem;
