@@ -20,7 +20,7 @@
             <img
               class="nav-logo nav-image-hover"
               src="../image/qqtea-icon-hover.svg"
-              alt="QQTea icon"
+              alt=""
             />
           </a>
         </div>
@@ -38,7 +38,7 @@
             <img
               class="nav-cart-icon nav-image-hover"
               src="../image/cart-icon-hover.svg"
-              alt="Shopping cart icon"
+              alt=""
             />
           </a>
         </div>
@@ -75,8 +75,14 @@
 
           <h3>Date & Time</h3>
           <div class="datetime-section">
-            <input type="date" id="pickup-date" name="pickup-date" required />
-            <input type="time" id="pickup-time" name="pickup-time" required />
+            <div>
+              <label for="pickup-date">Date</label>
+              <input type="date" id="pickup-date" name="pickup-date" required />
+            </div>
+            <div>
+              <label for="pickup-time">Time</label>
+              <input type="time" id="pickup-time" name="pickup-time" required />
+            </div>
           </div>
 
           <h3>Pickup Method</h3>

@@ -171,7 +171,7 @@
 }
 
 /*
-  STYLE GUIDE STYLING 
+  GLOBAL TYPOGRAPHY
 */
 body {
   margin: 0;
@@ -183,8 +183,8 @@ body {
 }
 
 h1 {
-  font-family: "Ligema", sans-serif;
-  font-size: 5.3rem;
+  font-family: "Nanum Pen", cursive;
+  font-size: 3.5rem;
   font-weight: 500;
 }
 
@@ -192,19 +192,6 @@ h2 {
   font-family: "Nanum Pen", cursive;
   font-size: 2.7rem;
   font-weight: 500;
-
-  margin-top: 5rem;
-  margin-bottom: 1.5rem;
-
-  padding-bottom: 0.5rem;
-  border-bottom: 0.1rem solid #2d2926;
-}
-#stylesheet-h2 {
-  border-bottom: none;
-}
-
-#interactive_elements h2 {
-  margin-top: 0rem;
 }
 
 h3 {
@@ -245,9 +232,19 @@ code {
 }
 
 /*
+  SHARED PAGE INTRO STYLING
+*/
+.product-category h2,
+.contact-section h1,
+.about-intro h1 {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 0.5rem;
+}
+
+/*
   STYLE GUIDE STRUCTURE -------------------
 */
-
 .element {
   max-width: 65rem;
 }
@@ -489,6 +486,7 @@ code {
 
 .checkout-form h1,
 .cart h1 {
+  font-family: "Ligema", sans-serif;
   font-size: 3rem;
   margin: 0;
 }
@@ -505,8 +503,6 @@ code {
   font-weight: bold;
   margin-top: 1.33em;
   margin-bottom: 0.5rem;
-  padding-bottom: 0;
-  border-bottom: none;
 }
 
 .schedule-pickup-section {
@@ -551,8 +547,9 @@ code {
   gap: 0.5rem;
   margin-bottom: 1.75rem;
 }
-.payment-info-section h4 {
+.payment-info-section h3 {
   grid-column: 1 / -1;
+  margin-bottom: 0;
 }
 .cardholder-field {
   grid-column: 1 / -1;
@@ -575,6 +572,12 @@ code {
   box-sizing: border-box;
 }
 
+.datetime-section label,
+.payment-info-section label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
 /*
   CHECKOUT CART SECTION -------------------
 */
@@ -584,7 +587,6 @@ code {
   font-size: 0.9rem;
   margin-top: 1.2rem;
   margin-bottom: 0.5rem;
-  border-bottom: none;
 }
 
 .cart-item {
@@ -695,7 +697,6 @@ code {
   border: none;
   border-left: 0.1rem solid #d9d5d2;
   border-right: 0.1rem solid #d9d5d2;
-  outline: none;
 }
 /*
 This hides the deafult styling html have for input type="number" or else it has the little arrow thingy that actually allows you to changed the number.
@@ -896,6 +897,8 @@ This hides the deafult styling html have for input type="number" or else it has 
 }
 
 .style-guide-header h1 {
+  font-family: "Ligema", sans-serif;
+  font-size: 5.3rem;
   margin-bottom: 0.5rem;
 }
 
@@ -925,6 +928,17 @@ This hides the deafult styling html have for input type="number" or else it has 
 .style-guide-main {
   flex: 1;
   min-width: 0;
+}
+
+.style-guide-main > section > h2 {
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #2d2926;
+}
+
+.style-guide-main > section:first-of-type > h2 {
+  margin-top: 0;
 }
 
 .heading-one-example {
@@ -980,6 +994,11 @@ pre {
 /*
   HOME WEBPAGE STYLING
 */
+.seasonal-text span {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
 .seasonal-offer-section {
   text-align: center;
   padding: 2rem 1rem 3rem;
@@ -988,10 +1007,7 @@ pre {
 }
 
 .seasonal-offer-section h1 {
-  font-family: "Nanum Pen", cursive;
-  font-size: 3.5rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   margin-top: 0;
   padding-bottom: 0.5rem;
 }
@@ -1021,10 +1037,7 @@ pre {
 }
 
 .product-category h2 {
-  text-align: center;
   font-size: 3.5rem;
-  margin-top: 6rem;
-  border-bottom: none;
 }
 .product-category p {
   text-align: center;
@@ -1066,9 +1079,6 @@ pre {
 }
 
 .product-detail-name {
-  font-family: "Nanum Pen", cursive;
-  font-size: 3.5rem;
-
   margin: 0 0 0.5rem 0;
 }
 
@@ -1200,13 +1210,6 @@ pre {
 /*
   CONTACT WEBPAGE STYLING
 */
-.contact-section h1 {
-  text-align: center;
-  font-family: "Nanum Pen", cursive;
-  font-size: 3.5rem;
-  font-weight: 500;
-  margin-top: 6rem;
-}
 .contact-section p {
   text-align: center;
   font-size: 1rem;
@@ -1265,24 +1268,15 @@ pre {
   padding: 0 1rem;
 }
 
-.about-intro h1 {
-  text-align: center;
-  font-family: "Nanum Pen", cursive;
-  font-size: 3.5rem;
-  font-weight: 500;
-  margin-top: 6rem;
-  border-bottom: none;
-}
-
 .about-intro p {
   text-align: center;
   font-size: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .about-product-image {
-  max-width: 50rem;
-  margin: 0 auto 8rem;
+  max-width: 45rem;
+  margin: 0 auto 5rem;
 }
 
 .about-product-image img {
@@ -1292,38 +1286,43 @@ pre {
 }
 
 .about-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 2rem;
-  max-width: 67rem;
-  margin: 0 auto 8rem;
+  position: relative;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 60rem;
+  margin: 0 auto 5rem;
+  padding: 7rem 3rem 2rem;
 }
 
 .about-row-image {
-  text-align: center;
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
 }
 
 .about-image {
-  width: 100%;
-  max-width: 11rem;
+  width: 12vw;
+  min-width: 7rem;
+  max-width: 10rem;
   height: auto;
+}
+.about-leaf {
+  max-width: 8rem;
 }
 
 .about-row-text h2 {
-  font-size: 3rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  border-bottom: none;
+  margin: 0 0 2rem;
+  padding: 0;
 }
 
 .about-row-text p {
-  max-width: 40rem;
+  width: 100%;
+  max-width: none;
   line-height: 1.6;
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0 0 1.5rem;
 }
 
+/* Menu button */
 .about-menu-button {
   display: inline-block;
   margin-top: 1.5rem;
@@ -1335,28 +1334,23 @@ pre {
 .about-menu-button:hover,
 .about-menu-button:focus {
   color: white;
-  background-color: #2d2926;
   text-decoration: none;
 }
 
-@media (max-width: 42rem) {
+@media (max-width: 50rem) {
   .about-row {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    width: 92%;
+    padding: 8rem 2rem 2rem;
   }
 
-  .about-row-text {
-    text-align: left;
+  .about-row-image {
+    right: 2rem;
   }
 }
 
 /*
   CITATION WEBPAGE STYLING
 */
-#typefaces h2 {
-  margin-top: 0;
-}
-
 #typefaces li,
 #icons li {
   line-height: 1.6;
