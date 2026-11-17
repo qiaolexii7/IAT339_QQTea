@@ -85,15 +85,17 @@
             <h4>Sample code:</h4>
             <pre><code>&lt;p&gt;
   Craving something new? Explore our
-  &lt;a class="intext-link" href="#seasonal"&gt;seasonal tea collection.&lt;/a&gt;
+  &lt;a class="intext-link" href="product-listing.html"&gt;
+    seasonal tea collection.
+  &lt;/a&gt;
 &lt;/p&gt; </code></pre>
 
             <h4>Rendered element:</h4>
             <p>
               Craving something new? Explore our
-              <a class="intext-link" href="product-listing.html"
-                >seasonal tea collection</a
-              >.
+              <a class="intext-link" href="product-listing.html">
+                seasonal tea collection.
+              </a>
             </p>
           </section>
 
@@ -153,7 +155,7 @@
             <h4>Sample code:</h4>
             <pre><code>&lt;div class="input-label-section"&gt;
   &lt;label for="cup-name"&gt;Name for your cup:&lt;/label&gt;
-  &lt;input type="text" id="cup-name" placeholder="Your name"&gt;
+  &lt;input type="text" id="cup-name" placeholder="Your name" /&gt;
 &lt;/div&gt;</code></pre>
 
             <h4>Rendered element:</h4>
@@ -171,7 +173,7 @@
 
             <h4>Sample code:</h4>
             <pre><code>&lt;label class="radio-option"&gt;
-  &lt;input type="radio" id="half-sweet" value="50"&gt;
+  &lt;input type="radio" id="half-sweet" value="50" /&gt;
   &lt;span&gt;50% Sweet&lt;/span&gt;
 &lt;/label&gt;</code></pre>
 
@@ -190,8 +192,15 @@
             <p>.image-as-link</p>
 
             <h4>Sample code:</h4>
-            <pre><code>&lt;a class="image-link" href="https://www.foxyfolksy.com/brown-sugar-milk-tea/"&gt;
-  &lt;img src="../image/brown-sugar-milk-tea.png" alt="Brown sugar milk tea" class="image-as-link"&gt;
+            <pre><code>&lt;a
+  class="image-link" 
+  href="https://www.foxyfolksy.com/brown-sugar-milk-tea/"
+&gt;
+  &lt;img 
+    src="../image/brown-sugar-milk-tea.png" 
+    alt="Brown sugar milk tea" 
+    class="image-as-link"
+  /&gt;
 &lt;/a&gt;</code></pre>
 
             <h4>Rendered element:</h4>
@@ -221,14 +230,14 @@
             <p>h1 h2 h3 h4</p>
 
             <h4>Sample code:</h4>
-            <pre><code>&lt;h1&gt;Heading I&lt;/h1&gt;
+            <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
 &lt;h3&gt;Heading 3&lt;/h3&gt;
 &lt;h4&gt;Heading 4&lt;/h4&gt;</code></pre>
 
             <h4>Rendered element:</h4>
 
-            <p class="heading-one-example">HEADING I</p>
+            <p class="heading-one-example">HEADING 1</p>
             <h2>Heading 2</h2>
             <h3>Heading 3</h3>
             <h4>Heading 4</h4>
@@ -242,9 +251,9 @@
 
             <h4>Sample code:</h4>
             <pre><code>&lt;p&gt;
-QQTea makes playful drinks with freshly brewed tea,
-fruit, milk, and chewy toppings! Every cup can be customized
-to match your perfect level of sweetness and ice.
+  QQTea makes playful drinks with freshly brewed tea,
+  fruit, milk, and chewy toppings! Every cup can be customized
+  to match your perfect level of sweetness and ice.
 &lt;/p&gt;</code></pre>
 
             <h4>Rendered element:</h4>
@@ -260,7 +269,7 @@ to match your perfect level of sweetness and ice.
             <h3 class="element-title">Numbered Lists</h3>
 
             <h4>CSS selector:</h4>
-            <p>.ol .li</p>
+            <p>ol li</p>
 
             <h4>Sample code:</h4>
             <pre><code>&lt;ol&gt;
@@ -295,7 +304,7 @@ to match your perfect level of sweetness and ice.
             <h4>Sample code:</h4>
             <pre><code>&lt;nav class="main-nav"&gt;
   &lt;div class="nav-left"&gt;
-    &lt;a class="nav-image-link" href="#home"&gt;
+    &lt;a class="nav-image-link" href="../html/index.html"&gt;
       &lt;img
         class="nav-logo nav-image-default"
         src="../image/qqtea-icon.svg"
@@ -309,10 +318,11 @@ to match your perfect level of sweetness and ice.
     &lt;/a&gt;
     &lt;a class="current" href="styleguide.html"&gt;STYLE GUIDE&lt;/a&gt;
   &lt;/div&gt;
+
   &lt;div class="nav-right"&gt;
-    &lt;a class="nav-link" href="#about"&gt;ABOUT&lt;/a&gt;
+    &lt;a class="nav-link" href="../html/about.html"&gt;ABOUT&lt;/a&gt;
     &lt;a class="nav-link" href="../html/product-listing.html"&gt;MENU&lt;/a&gt;
-    &lt;a class="nav-link" href="#contact"&gt;CONTACT US&lt;/a&gt;
+    &lt;a class="nav-link" href="../html/contact.html"&gt;CONTACT US&lt;/a&gt;
     &lt;a class="nav-image-link" href="../html/cart.html"&gt;
       &lt;img
         class="nav-cart-icon nav-image-default"
@@ -330,7 +340,7 @@ to match your perfect level of sweetness and ice.
             <h4>Rendered element:</h4>
             <nav class="main-nav">
               <div class="nav-left">
-                <a class="nav-image-link" href="#home">
+                <a class="nav-image-link" href="../html/index.html">
                   <img
                     class="nav-logo nav-image-default"
                     src="../image/qqtea-icon.svg"
@@ -346,9 +356,9 @@ to match your perfect level of sweetness and ice.
               </div>
 
               <div class="nav-right">
-                <a class="nav-link" href="#about">ABOUT</a>
+                <a class="nav-link" href="../html/about.html">ABOUT</a>
                 <a class="nav-link" href="../html/product-listing.html">MENU</a>
-                <a class="nav-link" href="#contact">CONTACT US</a>
+                <a class="nav-link" href="../html/contact.html">CONTACT US</a>
                 <a class="nav-image-link" href="../html/cart.html">
                   <img
                     class="nav-cart-icon nav-image-default"
@@ -374,7 +384,11 @@ to match your perfect level of sweetness and ice.
             <h4>Sample code:</h4>
             <pre><code>&lt;div class="product-listing"&gt;
   &lt;a href="brown-sugar-milk-tea.html" class="product-image-link"&gt;
-    &lt;img src="image/brown-sugar-milk-tea-icon.png" alt="Brown sugar pearl milk tea" class="image-icon"&gt;
+    &lt;img 
+      src="image/brown-sugar-milk-tea-icon.png" 
+      alt="Brown sugar pearl milk tea" 
+      class="image-icon"
+    /&gt;
   &lt;/a&gt;
 
   &lt;div class="product-info"&gt;
@@ -382,11 +396,12 @@ to match your perfect level of sweetness and ice.
     &lt;p&gt;Black Tea Base&lt;/p&gt;
 
     &lt;div class="price-cart"&gt;
-      &lt;h4&gt;$5.60&lt;/h4&gt;
+      &lt;p class="product-listing-price"&gt;$5.60&lt;/p&gt;
       &lt;a
         class="product-listing-button"
         href="../html/brown-sugar.html"
-        &gt;View Details
+        &gt;
+          View Details
       &lt;/a&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -408,11 +423,12 @@ to match your perfect level of sweetness and ice.
                 <p>Black Tea Base</p>
 
                 <div class="price-cart">
-                  <h4>$5.60</h4>
+                  <p class="product-listing-price">$5.60</p>
                   <a
                     class="product-listing-button"
                     href="../html/brown-sugar.html"
-                    >View Details
+                  >
+                    View Details
                   </a>
                 </div>
               </div>
@@ -637,8 +653,16 @@ to match your perfect level of sweetness and ice.
             <p>.cart</p>
 
             <h4>Sample code:</h4>
-            <pre><code>&lt;div class="cart-item"&gt;
-    &lt;img src="image/brown-sugar-milk-tea-icon.png" alt="Brown sugar pearl milk tea" class="image-icon"&gt;
+            <pre><code>&lt;div class="cart"&gt;
+  &lt;p class="cart-demo-title"&gt;CART DETAILS&lt;/p&gt;
+  &lt;p class="cart-demo-heading"&gt;Order Summary&lt;/p&gt;
+
+  &lt;div class="cart-item"&gt;
+    &lt;img 
+      src="image/brown-sugar-milk-tea-icon.png" 
+      alt="Brown sugar pearl milk tea" 
+      class="image-icon"
+    /&gt;
 
     &lt;div class="cart-item-info"&gt;
       &lt;div class="cart-title-price"&gt;
@@ -650,25 +674,34 @@ to match your perfect level of sweetness and ice.
       &lt;p&gt;No Ice&lt;/p&gt;
 
       &lt;div class="cart-edit"&gt;
-
         &lt;div class="quantity-control"&gt;
           &lt;button type="button"&gt;-&lt;/button&gt;
-          &lt;input type="number" id="quantity-brown-sugar" value="1" min="1"&gt;
+          &lt;input 
+            type="number" 
+            id="quantity-brown-sugar" 
+            value="1" 
+            min="1"
+          /&gt;
           &lt;button type="button"&gt;+&lt;/button&gt;
         &lt;/div&gt;
 
-        &lt;button class="remove-btn"&gt;Remove&lt;/button&gt;
+        &lt;div&gt;
+          &lt;button class="edit-btn"&gt;Edit&lt;/button&gt;
+          &lt;button class="remove-btn"&gt;Remove&lt;/button&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
 
   &lt;div class="cart-item"&gt;
-
-    &lt;img src="image/osmanthus-lychee-lemonade-icon.png" alt="Osmanthus Lychee Lemonade" class="image-icon"&gt;
+    &lt;img 
+      src="image/osmanthus-lychee-lemonade-icon.png" 
+      alt="Osmanthus Lychee Lemonade" 
+      class="image-icon"
+    /&gt;
 
     &lt;div class="cart-item-info"&gt;
-
       &lt;div class="cart-title-price"&gt;
         &lt;h3&gt;Osmanthus Lychee Lemonade&lt;/h3&gt;
         &lt;h4&gt;$5.80&lt;/h4&gt;
@@ -680,20 +713,30 @@ to match your perfect level of sweetness and ice.
       &lt;div class="cart-edit"&gt;
         &lt;div class="quantity-control"&gt;
           &lt;button type="button"&gt;-&lt;/button&gt;
-          &lt;input type="number" id="quantity-lychee" value="1" min="1"&gt;
+          &lt;input 
+            type="number" 
+            id="quantity-lychee" 
+            value="1" 
+            min="1"
+          /&gt;
           &lt;button type="button"&gt;+&lt;/button&gt;
         &lt;/div&gt;
-        &lt;button class="remove-btn"&gt;Remove&lt;/button&gt;
+
+        &lt;div&gt;
+          &lt;button class="edit-btn"&gt;Edit&lt;/button&gt;
+          &lt;button class="remove-btn"&gt;Remove&lt;/button&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-
 
   &lt;div class="cart-total"&gt;
     &lt;h4&gt;Total&lt;/h4&gt;
     &lt;h4&gt;$11.40&lt;/h4&gt;
   &lt;/div&gt;
-  &lt;button class="primary-button" type="submit"&gt;Proceed to Checkout&lt;/button&gt;
+  &lt;button class="primary-button" type="submit"&gt;
+    Proceed to Checkout
+  &lt;/button&gt;
 &lt;/div&gt;</code></pre>
 
             <h4>Rendered element:</h4>
