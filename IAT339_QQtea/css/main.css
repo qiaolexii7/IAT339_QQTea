@@ -1023,14 +1023,6 @@ pre {
   padding: 4rem 1rem 2rem;
 }
 
-.home-update-label {
-  margin: 0;
-  text-align: center;
-  color: #83b6f1;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
 .home-specials-heading {
   display: flex;
   align-items: center;
