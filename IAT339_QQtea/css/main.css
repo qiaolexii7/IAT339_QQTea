@@ -998,7 +998,7 @@ pre {
 .home-hero {
   max-width: 50rem;
   margin: 0 auto;
-  padding: 5rem 1rem 8rem;
+  padding: 7rem 1rem 8rem;
   text-align: center;
 }
 
@@ -1020,7 +1020,7 @@ pre {
 .home-specials {
   max-width: 66rem;
   margin: 0 auto;
-  padding: 4rem 1rem 2rem;
+  padding: 6rem 1rem 2rem;
 }
 
 .home-specials-heading {
@@ -1335,8 +1335,8 @@ pre {
 }
 
 .about-product-image {
-  max-width: 45rem;
-  margin: 0 auto 5rem;
+  max-width: 47rem;
+  margin: 5rem auto 7rem;
 }
 
 .about-product-image img {
@@ -1356,7 +1356,7 @@ pre {
 
 .about-row-image {
   position: absolute;
-  top: 1rem;
+  top: 3rem;
   right: 3rem;
 }
 
